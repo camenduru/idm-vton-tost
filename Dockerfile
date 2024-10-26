@@ -11,7 +11,7 @@ RUN apt update -y && apt install -y software-properties-common build-essential \
     libgl1 libglib2.0-0 zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev && \
     add-apt-repository -y ppa:git-core/ppa && apt update -y && \
     apt install -y python-is-python3 python3-pip sudo nano aria2 curl wget git git-lfs unzip unrar ffmpeg && \
-    # aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://developer.download.nvidia.com/compute/cuda/12.6.2/local_installers/cuda_12.6.2_560.35.03_linux.run -d /content -o cuda_12.6.2_560.35.03_linux.run && sh cuda_12.6.2_560.35.03_linux.run --silent --toolkit && \
+    aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://developer.download.nvidia.com/compute/cuda/12.6.2/local_installers/cuda_12.6.2_560.35.03_linux.run -d /content -o cuda_12.6.2_560.35.03_linux.run && sh cuda_12.6.2_560.35.03_linux.run --silent --toolkit && \
     echo "/usr/local/cuda/lib64" >> /etc/ld.so.conf && ldconfig && \
     git clone https://github.com/aristocratos/btop /content/btop && cd /content/btop && make && make install && \
     adduser --disabled-password --gecos '' camenduru && \
