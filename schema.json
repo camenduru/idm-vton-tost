@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+  "type": "object",
+  "properties": {
+    "readme": {
+      "type": "string",
+      "title": "Improving Diffusion Models for Authentic Virtual Try-on in the Wild",
+      "author": "Yisol Choi, Sangkyung Kwak, Kyungmin Lee, Hyungwon Choi, Jinwoo Shin",
+      "page": "https://idm-vton.github.io/",
+      "paper": "https://arxiv.org/abs/2403.05139",
+      "code": "https://github.com/yisol/IDM-VTON",
+      "jupyter": "https://github.com/camenduru/IDM-VTON-jupyter",
+      "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/idm-vton.ipynb",
+      "tags": [
+        "Image to Image"
+      ],
+      "widget": "readme"
+    },
+    "upload1": {
+      "type": "string",
+      "widget": "upload",
+      "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+      "property": "input_image_check"
+    },
+    "input_image_check": {
+      "type": "string",
+      "description": "Model Image URL",
+      "widget": "textarea"
+    },
+    "upload2": {
+      "type": "string",
+      "widget": "upload",
+      "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+      "property": "garment_image"
+    },
+    "garment_image": {
+      "type": "string",
+      "description": "Garment Image URL",
+      "widget": "textarea"
+    },
+    "garment_description": {
+      "type": "string",
+      "description": "Garment Description",
+      "widget": "textarea"
+    },
+    "use_auto_mask": {
+      "type": "boolean",
+      "description": "Use Auto Mask"
+    },
+    "use_auto_crop": {
+      "type": "boolean",
+      "description": "Use Auto Crop"
+    },
+    "denoise_steps": {
+      "type": "integer",
+      "widget": "select",
+      "description": "Denoise Steps",
+      "oneOf": [
+        {
+          "description": "30",
+          "enum": [
+            30
+          ]
+        },
+        {
+          "description": "40",
+          "enum": [
+            40
+          ]
+        },
+        {
+          "description": "50",
+          "enum": [
+            50
+          ]
+        }
+      ],
+      "default": 30
+    },
+    "seed": {
+      "type": "integer",
+      "description": "Seed (if 0 random)"
+    },
+    "example": {
+      "type": "string",
+      "image1": "https://files.catbox.moe/h7a327.jpg",
+      "image2": "https://files.catbox.moe/rso6bz.jpg",
+      "image3": "https://fakeimg.pl/768x1024/282828/eae0d0/?text=<in%20out>#.png",
+      "image4": "https://files.catbox.moe/sr6wxw.png",
+      "widget": "example"
+    }
+  },
+  "buttons": [
+    {
+      "id": "enter",
+      "label": "🥪 Enter"
+    }
+  ]
+}

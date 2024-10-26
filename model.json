@@ -1,0 +1,9 @@
+{
+    "input_image_check": "https://files.catbox.moe/h7a327.jpg",
+    "garment_image": "https://files.catbox.moe/rso6bz.jpg",
+    "garment_description": "Short Sleeve Round Neck T-shirt",
+    "use_auto_mask": true,
+    "use_auto_crop": false,
+    "denoise_steps": 30,
+    "seed": 0
+}
