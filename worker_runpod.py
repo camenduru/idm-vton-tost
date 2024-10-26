@@ -182,6 +182,8 @@ def generate(input):
         seed = random.randint(0, 18446744073709551615)
     print(seed)
 
+    human_image = Image.open(human_image)
+    garment_image = Image.open(garment_image)
     example_dict = { "background": human_image, "layers": [Image.new("RGB", (768, 1024), (255, 255, 255))] }
     output_image, mask_image = start_tryon(
         dict=example_dict,
