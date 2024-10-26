@@ -1,4 +1,5 @@
 import os, sys, json, requests, random, time, runpod
+from urllib.parse import urlsplit
 
 sys.path.append('/content/IDM-VTON/gradio_demo')
 
