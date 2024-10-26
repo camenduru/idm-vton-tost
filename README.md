@@ -15,6 +15,7 @@ https://idm-vton.github.io/
 https://arxiv.org/abs/2403.05139
 
 ### 🖼 Output
+![image](https://github.com/user-attachments/assets/6b72cdcb-b44c-4cd8-9b6c-0d1b5cde609f)
 
 ### 🏢 Sponsor
 [https://runpod.io](https://runpod.io?ref=iqi9iy8y)
